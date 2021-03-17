@@ -1,0 +1,32 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+    public static Boolean checkcontainselements(char[] arr1,char[] arr2){
+
+ 	   for(int i=0; i < arr1.length ; i++){
+ 		   for(int j=0; j < arr2.length ; j++) {
+ 		     if(arr1[i] == arr2[j])
+ 		           return true;
+
+ 		   }
+		}
+		return false;
+        
+    }
+    
+    
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		char [] array1 = {'a','b','c','d','e','f'};
+		char [] array2 = {'q','s','w','d','o','y'};
+    //check array contains same elements
+	  System.out.println(checkcontainselements(array1,array2));	
+	}
+}
